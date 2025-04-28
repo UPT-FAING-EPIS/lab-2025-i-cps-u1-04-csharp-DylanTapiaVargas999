@@ -37,6 +37,14 @@ jobs:
         working-directory: ./ATM
         run: docfx build -o ../docs_site/ATM
 
+      - name: Generate ATM Metadata
+        working-directory: ./Comportamiento
+        run: docfx metadata
+
+      - name: Build ATM Docs
+        working-directory: ./Comportamiento
+        run: docfx build -o ../docs_site/Comportamiento
+
       - name: Copy custom index.html
         run: cp ./index.html ./docs_site/index.html
 

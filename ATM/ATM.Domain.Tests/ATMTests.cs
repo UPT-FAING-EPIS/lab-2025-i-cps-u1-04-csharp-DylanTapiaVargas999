@@ -1,8 +1,15 @@
 using NUnit.Framework;
+
 namespace ATM.Domain.Tests
 {
+    /// <summary>
+    /// Contains unit tests for the <see cref="ATM"/> operations using deposit and withdraw commands.
+    /// </summary>
     public class ATMTests
     {
+        /// <summary>
+        /// Tests that withdrawing from an account updates the balance correctly.
+        /// </summary>
         [Test]
         public void GivenAccountAndWithdraw_ThenExecute_ReturnsCorrectAmount()
         {
@@ -12,6 +19,10 @@ namespace ATM.Domain.Tests
             new ATM(withdraw).Action();
             Assert.IsTrue(account.AccountBalance.Equals(200));
         }
+
+        /// <summary>
+        /// Tests that depositing into an account updates the balance correctly.
+        /// </summary>
         [Test]
         public void GivenAccountAndDeposit_ThenExecute_ReturnsCorrectAmount()
         {

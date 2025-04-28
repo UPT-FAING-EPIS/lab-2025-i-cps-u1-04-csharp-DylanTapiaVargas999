@@ -39,6 +39,11 @@
     "title": "Namespace ATM.Domain",
     "summary": "Namespace ATM.Domain Classes ATM Represents an Automated Teller Machine (ATM) that executes commands. Account Represents a bank account within the ATM system. DepositCommand Represents a deposit operation command for an account. WithdrawCommand Command that performs a withdrawal operation on an account. Interfaces ICommand Defines a command interface with an execution method."
   },
+  "disenio.html": {
+    "href": "disenio.html",
+    "title": "",
+    "summary": "classDiagram class Account Account : +Int AccountNumber Account : +Decimal AccountBalance Account : +Withdraw() Void Account : +Deposit() Void class ATM ATM : +Action() Void class DepositCommand DepositCommand : +Execute() Void class ICommand ICommand : +Execute() Void class WithdrawCommand WithdrawCommand : +Execute() Void ICommand <|.. DepositCommand ICommand <|.. WithdrawCommand"
+  },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
     "title": "Getting Started",
@@ -53,10 +58,5 @@
     "href": "index.html",
     "title": "This is the HOMEPAGE.",
     "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
-  },
-  "output.html": {
-    "href": "output.html",
-    "title": "",
-    "summary": "classDiagram class Account Account : +Int AccountNumber Account : +Decimal AccountBalance Account : +Withdraw() Void Account : +Deposit() Void class ATM ATM : +Action() Void class DepositCommand DepositCommand : +Execute() Void class ICommand ICommand : +Execute() Void class WithdrawCommand WithdrawCommand : +Execute() Void ICommand <|.. DepositCommand ICommand <|.. WithdrawCommand"
   }
 }

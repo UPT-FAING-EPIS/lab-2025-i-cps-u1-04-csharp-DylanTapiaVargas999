@@ -49,6 +49,11 @@
     "title": "Namespace Payment.Domain",
     "summary": "Namespace Payment.Domain Classes CashPaymentStrategy Represents a payment strategy that handles cash payments. Implements the IPaymentStrategy interface. CreditCardPaymentStrategy Represents a payment strategy that handles credit card payments. Implements the IPaymentStrategy interface. DebitCardPaymentStrategy Represents a payment strategy that handles debit card payments. Implements the IPaymentStrategy interface. PaymentContext Defines the payment context that uses a strategy for processing payments. The context allows the client to choose a payment strategy at runtime and delegates the payment process to the selected strategy. PaymentService Defines the service for processing payments. This class utilizes the Strategy pattern to select a payment method based on the selected payment type at runtime. Interfaces IPaymentStrategy Defines the contract for payment strategies. Any payment method must implement this interface to define its specific payment behavior. Enums PaymentType Defines the payment types available for processing."
   },
+  "disenio.html": {
+    "href": "disenio.html",
+    "title": "",
+    "summary": "classDiagram class CashPaymentStrategy CashPaymentStrategy : +Pay() Boolean class CreditCardPaymentStrategy CreditCardPaymentStrategy : +Pay() Boolean class DebitCardPaymentStrategy DebitCardPaymentStrategy : +Pay() Boolean class IPaymentStrategy IPaymentStrategy : +Pay() Boolean class PaymentContext PaymentContext : +SetPaymentStrategy() Void PaymentContext : +Pay() Boolean class PaymentService PaymentService : +ProcessPayment() Boolean IPaymentStrategy <|.. CashPaymentStrategy IPaymentStrategy <|.. CreditCardPaymentStrategy IPaymentStrategy <|.. DebitCardPaymentStrategy"
+  },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
     "title": "Getting Started",
@@ -63,10 +68,5 @@
     "href": "index.html",
     "title": "This is the HOMEPAGE.",
     "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
-  },
-  "output.html": {
-    "href": "output.html",
-    "title": "",
-    "summary": "classDiagram class CashPaymentStrategy CashPaymentStrategy : +Pay() Boolean class CreditCardPaymentStrategy CreditCardPaymentStrategy : +Pay() Boolean class DebitCardPaymentStrategy DebitCardPaymentStrategy : +Pay() Boolean class IPaymentStrategy IPaymentStrategy : +Pay() Boolean class PaymentContext PaymentContext : +SetPaymentStrategy() Void PaymentContext : +Pay() Boolean class PaymentService PaymentService : +ProcessPayment() Boolean IPaymentStrategy <|.. CashPaymentStrategy IPaymentStrategy <|.. CreditCardPaymentStrategy IPaymentStrategy <|.. DebitCardPaymentStrategy"
   }
 }

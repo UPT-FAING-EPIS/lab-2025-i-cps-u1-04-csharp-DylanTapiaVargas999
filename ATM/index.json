@@ -42,7 +42,7 @@
   "disenio.html": {
     "href": "disenio.html",
     "title": "",
-    "summary": "classDiagram class Account Account : +Int AccountNumber Account : +Decimal AccountBalance Account : +Withdraw() Void Account : +Deposit() Void class ATM ATM : +Action() Void class DepositCommand DepositCommand : +Execute() Void class ICommand ICommand : +Execute() Void class WithdrawCommand WithdrawCommand : +Execute() Void ICommand <|.. DepositCommand ICommand <|.. WithdrawCommand"
+    "summary": "mermaid.md classDiagram class Account Account : +Int AccountNumber Account : +Decimal AccountBalance Account : +Withdraw() Void Account : +Deposit() Void class ATM ATM : +Action() Void class DepositCommand DepositCommand : +Execute() Void class ICommand ICommand : +Execute() Void class WithdrawCommand WithdrawCommand : +Execute() Void ICommand <|.. DepositCommand ICommand <|.. WithdrawCommand"
   },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
